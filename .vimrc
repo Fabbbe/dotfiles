@@ -53,6 +53,7 @@ set tabstop=4
 let g:airline_powerline_fonts = 1
 
 syntax enable
-colorscheme solarized
 let g:solarized_termcolors=256
 
+colorscheme solarized
+set background=dark
