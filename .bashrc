@@ -51,7 +51,7 @@
 alias ls='ls --color=auto'
 alias tmux='tmux -2'
 
-PS1="\033[38;5;236;48;5;184m\033[38;5;233;48;5;184m\u@\h \033[38;5;184;48;5;241m\033[38;5;241;48;5;232m\033[38;5;249m \w \033[38;5;232;48;5;241m\033[38;5;241;48;5;264m$(tput sgr0)\n \$ "
+PS1="\033[38;5;236;48;5;184m\033[38;5;233;48;5;184m\u@\h \033[38;5;184;48;5;241m\033[38;5;241;48;5;232m\033[38;5;249m \w \033[38;5;232;48;5;241m$(tput sgr0)\033[38;5;241m$(tput sgr0)\n \$ "
 # Completion options
 #
 # These completion tuning parameters change the default behavior of bash_completion:
