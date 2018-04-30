@@ -31,6 +31,9 @@ Plugin 'mhinz/vim-signify'
 " Airline Clock
 Plugin 'enricobacis/vim-airline-clock'
 
+" NERDTree
+Plugin 'scrooloose/nerdtree'
+
 "mz/vim-plugin-minibufexpl All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -46,9 +49,10 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set nu
+set number
 set t_Co=256
 set tabstop=4
+set t_ut=
 
 let g:airline_powerline_fonts = 1
 let g:solarized_termcolors=256
