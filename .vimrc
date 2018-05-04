@@ -19,13 +19,10 @@ Plugin 'davidhalter/jedi-vim'
 " Buffer explorer
 Plugin 'weynhamz/vim-plugin-minibufexpl'
 
-" Undo tree
-Plugin 'mbbill/undotree'
-
 " Vim fugitive
 Plugin 'tpope/vim-fugitive'
 
-" Drifference
+" git Drifference
 Plugin 'mhinz/vim-signify'
 
 " Airline Clock
@@ -33,6 +30,12 @@ Plugin 'enricobacis/vim-airline-clock'
 
 " NERDTree
 Plugin 'scrooloose/nerdtree'
+
+" HASKELL
+Plugin 'kana/vim-filetype-haskell'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'eagletmt/neco-ghc'
+Plugin 'dag/vim2hs'
 
 "mz/vim-plugin-minibufexpl All of your Plugins must be added before the following line
 call vundle#end()            " required
