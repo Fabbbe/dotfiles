@@ -1,5 +1,5 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
+filetype off                  " requird
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -15,9 +15,6 @@ Plugin 'vim-airline/vim-airline'
 
 " Python autocomplete
 Plugin 'davidhalter/jedi-vim'
-
-" Buffer explorer
-Plugin 'weynhamz/vim-plugin-minibufexpl'
 
 " Vim fugitive
 Plugin 'tpope/vim-fugitive'
@@ -36,6 +33,9 @@ Plugin 'kana/vim-filetype-haskell'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'dag/vim2hs'
+
+" Markdown
+Plugin 'mikewest/vimroom'
 
 "mz/vim-plugin-minibufexpl All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -57,9 +57,23 @@ set t_Co=256
 set tabstop=4
 set t_ut=
 
-let g:airline_powerline_fonts = 1
+let g:airline_theme='angr'
+let g:airline_symbols_ascii = 1
+
+" Tabline to display buffers
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+
+" Changes the left and right seperetors ti nothing
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+
 let g:solarized_termcolors=256
 
+" Vimroom
+let g:vimroom_ctermbackground=0
+let g:vimroom_sidebar_height=0
+
 syntax enable
-set background=light
-colorscheme solarized
+colorscheme elflord 
