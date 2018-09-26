@@ -10,8 +10,12 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" THEMES
+Plugin 'morhetz/gruvbox'
+
 " Adds a bottom bar to vim
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Python autocomplete
 Plugin 'davidhalter/jedi-vim'
@@ -22,17 +26,14 @@ Plugin 'tpope/vim-fugitive'
 " git Drifference
 Plugin 'mhinz/vim-signify'
 
-" Airline Clock
-Plugin 'enricobacis/vim-airline-clock'
-
 " NERDTree
 Plugin 'scrooloose/nerdtree'
 
-" HASKELL
-Plugin 'kana/vim-filetype-haskell'
-Plugin 'eagletmt/ghcmod-vim'
-Plugin 'eagletmt/neco-ghc'
-Plugin 'dag/vim2hs'
+" Ruby
+Plugin 'vim-ruby/vim-ruby'
+
+" Webdev
+Plugin 'mattn/emmet-vim'
 
 " Markdown
 Plugin 'mikewest/vimroom'
