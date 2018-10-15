@@ -57,8 +57,9 @@ set number
 set t_Co=256
 set tabstop=4
 set t_ut=
+set background=dark
 
-let g:airline_theme='angr'
+let g:airline_theme='gruvbox'
 let g:airline_symbols_ascii = 1
 
 " Tabline to display buffers
@@ -77,4 +78,7 @@ let g:vimroom_ctermbackground=0
 let g:vimroom_sidebar_height=0
 
 syntax enable
-colorscheme elflord 
+colorscheme gruvbox 
+
+" Turn of the gruvbox background
+hi Normal guibg=NONE ctermbg=NONE
