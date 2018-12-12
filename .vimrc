@@ -12,13 +12,14 @@ Plugin 'VundleVim/Vundle.vim'
 
 " THEMES
 Plugin 'morhetz/gruvbox'
+Plugin 'NLKNguyen/papercolor-theme'
 
 " Adds a bottom bar to vim
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 " Python autocomplete
-Plugin 'davidhalter/jedi-vim'
+Plugin 'Valloric/YouCompleteMe'
 
 " Vim fugitive
 Plugin 'tpope/vim-fugitive'
@@ -53,13 +54,18 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+
+
 set number
 set t_Co=256
 set tabstop=4
 set t_ut=
-set background=dark
+set background=light
 
-let g:airline_theme='gruvbox'
+syntax enable
+filetype plugin indent on
+
+let g:airline_theme='atomic'
 let g:airline_symbols_ascii = 1
 
 " Tabline to display buffers
@@ -77,8 +83,8 @@ let g:solarized_termcolors=256
 let g:vimroom_ctermbackground=0
 let g:vimroom_sidebar_height=0
 
-syntax enable
-colorscheme gruvbox 
+colorscheme PaperColor
 
-" Turn of the gruvbox background
-hi Normal guibg=NONE ctermbg=NONE
+" Turn of the colorscheme background
+highlight Normal guibg=NONE ctermbg=NONE
+highlight nonText guibg=NONE ctermbg=NONE

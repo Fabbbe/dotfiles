@@ -17,3 +17,5 @@ HISTFILE=~/.zsh_history
 # Use modern completion system
 autoload -Uz compinit
 compinit
+
+alias "ls"="ls --color"
